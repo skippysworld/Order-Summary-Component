@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontEnd Mentor]()
-- Live Site URL: [GitHub Pages]()
+- Solution URL: [FrontEnd Mentor](https://github.com/skippysworld/Order-Summary-Component.git)
+- Live Site URL: [GitHub Pages](https://skippysworld.github.io/Order-Summary-Component/)
 
 ## My process
 
