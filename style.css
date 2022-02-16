@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+}
+
+footer a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+}
+
+footer a:hover,
+footer a:focus {
+  color: hsl(224, 23%, 55%);
+}
+
+main.card {
+  max-width: 20.5rem;
+  background-color: #fff;
+  border-radius: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1rem 2rem hsla(224, 23%, 55%, 25%);
+}
+
+main.card img {
+  border-radius: 1.3rem 1.3rem 0 0;
+}
+
+div.card__summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+h1.card__summary--heading {
+  padding-top: 0.25rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  font-size: 22px;
+}
+
+p.card__summary--description {
+  padding: 1rem 0.5rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+}
+
+ul,
+li {
+  margin: 0;
+  padding-left: 0;
+}
+
+ul.card__summary--details {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.5rem;
+}
+
+li.card__summary--plan,
+li.card__summary--price {
+  font-size: 0.9rem;
+}
+
+li.card__summary--plan,
+li.card__summary--change {
+  font-weight: 700;
+}
+
+li.card__summary--plan {
+  color: hsl(223, 47%, 23%);
+}
+
+li.card__summary--price {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+li.card__summary--change a {
+  padding-left: 2rem;
+  font-size: 0.8rem;
+  color: hsl(245, 75%, 52%);
+}
+
+li.card__summary--change a:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+a.card__proceed,
+a.card__cancel {
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.03rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+a.card__proceed {
+  width: 100%;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  margin: 1.5rem 0;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  border-radius: 0.7rem;
+  box-shadow: 0 1rem 1rem hsla(245, 75%, 52%, 25%);
+}
+
+a.card__proceed:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+a.card__cancel {
+  margin-bottom: 0.5rem;
+  color: hsl(224, 23%, 55%);
+}
+
+a.card__cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 768px) {
+  body {
+    background: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  main.card {
+    max-width: 28.125rem;
+  }
+
+  div.card__summary {
+    padding: 2.5rem 3rem;
+  }
+
+  h1.card__summary--heading {
+    font-size: 28px;
+  }
+
+  ul.card__summary--details {
+    padding: 1.5rem;
+  }
+
+  li.card__summary--plan,
+  li.card__summary--price {
+    font-size: 1rem;
+  }
+
+  li.card__summary--plan,
+  li.card__summary--change {
+    font-weight: 900;
+  }
+
+  li.card__summary--change a {
+    font-size: 0.85rem;
+    padding-left: 4.5rem;
+  }
+
+  a.card__proceed {
+    margin: 2rem 0;
+  }
+}
