@@ -97,6 +97,7 @@ ul.card__summary--details {
 
 li.card__summary--plan,
 li.card__summary--price {
+  padding-right: 2rem;
   font-size: 0.9rem;
 }
 
@@ -115,7 +116,6 @@ li.card__summary--price {
 }
 
 li.card__summary--change a {
-  padding-left: 2rem;
   font-size: 0.8rem;
   color: hsl(245, 75%, 52%);
 }
@@ -186,6 +186,7 @@ a.card__cancel:hover {
   li.card__summary--plan,
   li.card__summary--price {
     font-size: 1rem;
+    padding-right: 4.8rem;
   }
 
   li.card__summary--plan,
@@ -195,7 +196,6 @@ a.card__cancel:hover {
 
   li.card__summary--change a {
     font-size: 0.85rem;
-    padding-left: 4.5rem;
   }
 
   a.card__proceed {
